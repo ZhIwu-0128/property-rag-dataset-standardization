@@ -1,0 +1,11 @@
+{
+  "dataset_name_old": "property_rag_demo_v1",
+  "dataset_name_new": "property_rag_demo_v1_1",
+  "schema_version_old": "1.0.0",
+  "schema_version_new": "1.1.0",
+  "converted_records": 3,
+  "metadata_added_to_each_record": true,
+  "embedding_recomputed": false,
+  "qdrant_written": false,
+  "contains_real_records": false
+}

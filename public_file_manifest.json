@@ -1,0 +1,25 @@
+{
+  "created": "2026-06-29",
+  "package": "property-rag-dataset-standardization-public",
+  "contains_real_data": false,
+  "files": [
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "docs/data_governance_workflow.md",
+    "docs/dataset_schema_v1_1.md",
+    "docs/project_retrospective.md",
+    "docs/rag_payload_design.md",
+    "docs/resume_project_summary.md",
+    "docs/validation_checklist.md",
+    "examples/README.md",
+    "examples/synthetic_dataset_manifest_v1_1.json",
+    "examples/synthetic_metadata_addition_report.json",
+    "examples/synthetic_property_rag_sample.jsonl",
+    "notebooks/README.md",
+    "scripts/add_standard_metadata.py",
+    "scripts/strip_notebook_outputs.py",
+    "scripts/validate_jsonl_schema.py"
+  ]
+}

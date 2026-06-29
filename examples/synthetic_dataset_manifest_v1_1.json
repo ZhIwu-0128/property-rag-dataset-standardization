@@ -1,0 +1,48 @@
+{
+  "dataset_name": "property_rag_demo_v1_1",
+  "schema_version": "1.1.0",
+  "record_count": 3,
+  "files": {
+    "all": "examples/synthetic_property_rag_sample.jsonl"
+  },
+  "split_config": {
+    "split_field": "split_info.split",
+    "split_values": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "split_seed": 42,
+    "split_strategy": "semantic_cluster_id + final_label_id stratified split",
+    "split_counts": {
+      "train": 1,
+      "validation": 1,
+      "test": 1
+    }
+  },
+  "rag_config": {
+    "embedding_text_field": "data_content[0].content",
+    "embedding_policy": "only_origin_query",
+    "embedding_model": "Qwen3-Embedding-4B",
+    "embedding_dimension": 2560,
+    "rerank_model": "Qwen3-Reranker-4B",
+    "do_not_embed_fields": [
+      "annotation",
+      "final_result",
+      "quality_info",
+      "semantic_info",
+      "split_info",
+      "processing_info",
+      "metadata"
+    ]
+  },
+  "metadata_policy": {
+    "metadata_added_to_each_record": true,
+    "metadata_not_for_embedding": true,
+    "metadata_default_qdrant_payload_policy": "exclude_or_keep_minimal_reference_only"
+  },
+  "data_safety": {
+    "contains_real_records": false,
+    "contains_personal_information": false
+  }
+}
